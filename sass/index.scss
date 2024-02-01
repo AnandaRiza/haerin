@@ -1,0 +1,33 @@
+@use "_aboutme";
+@use "_contact";
+@use 'sass:math';
+
+$secondary-color: #5655da;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: aboutme.$secondary-color;
+}
+
+.profile {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  img {
+    border-radius: 50%;
+    width: 165px;
+    height: 165px;
+  }
+}
+
+.aboutme {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
